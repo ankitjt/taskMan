@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Monoton&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+            },
+            fontFamily: {
+                'outShine': ['Monoton', 'cursive'],
+                'allText': ['Comfortaa', 'cursive']
+            }
+          }
+        }
+      </script>
+    <title>taskMan</title>
+    
+   
+</head>
+<body class="w-screen h-screen flex items-center justify-center">
+    <div class="wrapper font-allText">
+        <h1 class="font-outShine text-center text-6xl text-emerald-500 font-bold relative">
+          taskMan
+          <img src="./assets/logo.svg" alt="logo" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-emerald-600">
+        </h1>
+        <form action="" class="mt-10 px-5 flex flex-col ">
+            <input type="email" name="email" id="email" class="my-5 w-full border-b border-emerald-500 rounded-xl outline-none focus:outline-none focus:ring focus:border-emerald-500 font-semibold tracking-wider lowercase text-emerald-600" placeholder="your email">
+            <input type="password" name="password" id="password" class="w-full border-b border-emerald-500 rounded-xl outline-none focus:outline-none focus:ring focus:border-emerald-500 font-semibold tracking-wider lowercase text-emerald-600" placeholder="your password">
+            <a href="home.html" class="mt-10 mx-auto w-40 bg-emerald-600 py-3 uppercase tracking-[5px] text-center text-white font-bold rounded-md"> Login</a>
+        </form>
+        <p class="mt-8 text-center font-bold text-xl text-zinc-900">New User?, register <a href="register.html" class="text-emerald-500 underline">here</a> </p>
+
+  </div>
+
+  </div>
+</body>
+</html>
