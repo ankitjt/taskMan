@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script>
@@ -14,7 +14,7 @@
             },
             fontFamily: {
                 'outShine': ['Monoton', 'cursive'],
-                'allText': ['Comfortaa', 'cursive']
+                'allText': ['Montserrat', 'sans-serif']
             }
           }
         }
@@ -24,20 +24,48 @@
    
 </head>
 <body class="w-screen h-screen flex items-center justify-center">
+
     <div class="wrapper font-allText">
+
         <h1 class="font-outShine text-center text-6xl text-emerald-500 font-bold relative">
           taskMan
-          <img src="./assets/logo.svg" alt="logo" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-emerald-600">
+      
+          <img src="./assets/logo.svg" alt="logo" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+          text-emerald-600">
+          
         </h1>
-        <form action="" class="mt-10 px-5 flex flex-col ">
-            <input type="email" name="email" id="email" class="my-5 w-full border-b border-emerald-500 rounded-xl outline-none focus:outline-none focus:ring focus:border-emerald-500 font-semibold tracking-wider lowercase text-emerald-600" placeholder="your email">
-            <input type="password" name="password" id="password" class="w-full border-b border-emerald-500 rounded-xl outline-none focus:outline-none focus:ring focus:border-emerald-500 font-semibold tracking-wider lowercase text-emerald-600" placeholder="your password">
+
+        <!-- Login Section -->
+        <form action="" class="mt-14 px-5 flex flex-col">
+
+            <div class="emailWrapper relative">
+
+              <input type="email" name="email" id="email" class="peer my-4 py-3 w-full border-2 border-emerald-400 rounded-md focus:outline-none focus:border-emerald-400 font-semibold tracking-wider lowercase text-emerald-600 placeholder-transparent " placeholder="your email" autofocus="off" autocomplete="off">
+              
+              <label for="email" class=" font-allText absolute left-2.5 -top-3.5 transition-all peer-placeholder-shown:text-xs font-semibold peer-placeholder-shown:text-emerald-600 peer-placeholder-shown:top-[35px] tracking-wider peer-focus:-top-3 peer-focus:text-emerald-600 peer-focus:font-semibold tracking-wide peer-focus:text-xs peer-focus:uppercase uppercase">email</label>
+            
+            </div>
+
+            <div class="passwordWrapper relative mt-4">
+            
+              <input type="password" name="password" id="password" class="peer my-4 py-3 w-full border-2 border-emerald-400 rounded-md focus:outline-none focus:border-emerald-400 font-semibold tracking-wider lowercase text-emerald-600 placeholder-transparent " placeholder="your password" autocomplete="off">
+            
+              <label for="password" class="absolute left-2.5 -top-3.5 transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-emerald-600 font-semibold peer-placeholder-shown:top-[35px] tracking-wider   peer-focus:-top-3 peer-focus:text-emerald-600 peer-focus:font-semibold peer-focus:text-xs  uppercase">password</label>
+            
+            </div>
+            
             <a href="home.html" class="mt-10 mx-auto w-40 bg-emerald-600 py-3 uppercase tracking-[5px] text-center text-white font-bold rounded-md"> Login</a>
-        </form>
-        <p class="mt-8 text-center font-bold text-xl text-zinc-900">New User?, register <a href="register.html" class="text-emerald-500 underline">here</a> </p>
+        
+          </form>
+        
+          <p class="mt-8 text-center font-semibold text-base text-gray-700">
+            New User?, register <a href="register.html" class="text-emerald-500 underline">here</a> 
+          </p>
 
   </div>
 
   </div>
+
 </body>
+
 </html>
