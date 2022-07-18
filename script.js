@@ -16,12 +16,6 @@ closeCreateTaskScreen.onclick = () => {
     createTaskScreen.classList.add("hidden")
 }
 
-// for (let i = 0; i < downArrows.length; i++) {
-//     downArrows[i].onclick = () => {
-//         console.log(downArrows[i].parentElement.parentElement.parentElement.innerHTML)
-//     }
-// }
-
 for (let thisDownArrow of downArrows) {
     thisDownArrow.onclick = () => {
         let selectedBox = thisDownArrow.parentElement.parentElement.parentElement.childNodes[7]
